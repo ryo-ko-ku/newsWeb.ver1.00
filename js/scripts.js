@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const sidebarWrapper = document.getElementById('sidebar-wrapper');
     let scrollToTopVisible = false;
     // Closes the sidebar menu
+    //acitiveクラスの付与、関数menuToggleIcon()の発動
     const menuToggle = document.body.querySelector('.menu-toggle');
     menuToggle.addEventListener('click', event => {
         event.preventDefault();
@@ -15,7 +16,7 @@ window.addEventListener('DOMContentLoaded', event => {
         _toggleMenuIcon();
         menuToggle.classList.toggle('active');
     })
-
+    //remove　activeクラスして関数toggleMenuIcon()の発動
     // Closes responsive menu when a scroll trigger link is clicked
     var scrollTriggerList = [].slice.call(document.querySelectorAll('#sidebar-wrapper .js-scroll-trigger'));
     scrollTriggerList.map(scrollTrigger => {
@@ -25,7 +26,7 @@ window.addEventListener('DOMContentLoaded', event => {
             _toggleMenuIcon();
         })
     });
-
+    //メニューアイコンのオンオフ時の変更
     function _toggleMenuIcon() {
         const menuToggleBars = document.body.querySelector('.menu-toggle > .fa-bars');
         const menuToggleTimes = document.body.querySelector('.menu-toggle > .fa-xmark');
@@ -40,6 +41,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     // Scroll to top button appear
+    //スクロール移動時の処理時間、
     document.addEventListener('scroll', () => {
         const scrollToTop = document.body.querySelector('.scroll-to-top');
         if (document.documentElement.scrollTop > 100) {
@@ -54,27 +56,46 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         }
     })
-})
 
-function fadeOut(el) {
-    el.style.opacity = 1;
-    (function fade() {
-        if ((el.style.opacity -= .1) < 0) {
-            el.style.display = "none";
-        } else {
-            requestAnimationFrame(fade);
-        }
-    })();
-};
+    //以下FADEINとFADEOUTの設定
+    function fadeOut(el) {
+        el.style.opacity = 1;
+        (function fade() {
+            if ((el.style.opacity -= .1) < 0) {
+                el.style.display = "none";
+            } else {
+                requestAnimationFrame(fade);
+            }
+        })();
+    };
 
-function fadeIn(el, display) {
-    el.style.opacity = 0;
-    el.style.display = display || "block";
-    (function fade() {
-        var val = parseFloat(el.style.opacity);
-        if (!((val += .1) > 1)) {
-            el.style.opacity = val;
-            requestAnimationFrame(fade);
-        }
-    })();
-};
+    function fadeIn(el, display) {
+        el.style.opacity = 0;
+        el.style.display = display || "block";
+        (function fade() {
+            var val = parseFloat(el.style.opacity);
+            if (!((val += .1) > 1)) {
+                el.style.opacity = val;
+                requestAnimationFrame(fade);
+            }
+        })();
+    };
+});
+    //card listのフェードイン＝スクロールイベント
+
+$(function () {
+
+    
+
+$(window).scroll(function () {
+        const windowHeight = $(window).height();
+        const scroll = $(window).scrollTop();
+
+        $(".element").each(function () {
+            const targetPosition = $(this).offset().top;
+            if (scroll > targetPosition - windowHeight + 100) {
+                $(this).addClass(".is-fadein");
+            }
+        });
+    });
+});

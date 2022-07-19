@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>newsWeb</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>newsWeb</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
     <body id="page-top">
         <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        
+            <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+
+            <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand"><a href="#">Menu</a></li>
+                    <li class="sidebar-nav-item"><a href="#page-top">TOP</a></li>
+                    <li class="sidebar-nav-item"><a href="#card-list">記事一覧へ</a></li>
+                    <li class="sidebar-nav-item"><a href="#Page-End">Page End</a></li>
+                    <li class="sidebar-nav-item"><a href="#">ログアウト</a></li>
+                </ul>
+            </nav>
+       
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
@@ -54,28 +57,36 @@
             </div>
         </section>
         <!-- Services-->
-        <div class="container">
+        <div class="container" id="card-list" >
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="card bg-primary text-white text-center">
-                        <img class="card-img-top" src="assets/img/image002.jpg" alt="#" />
-                        <div class="card-body">
-                            <h4 class="card-title">うそ！　うちの子の仕業！？</h4>
-                            <p class="card-text">
-                                飼い主がいない間、犬たちがとっている行動とは！　彼らの生態を暴く。…
-                            </p>
+                <div class="col-sm-6 element">
+                    <!-- card.html001-->
+                    <a href="#">
+                        <div class="card bg-primary text-white text-center">
+                            <img class="card-img-top" src="assets/img/image002.jpg" alt="#" />
+                            <div class="card-body">
+                                <h4 class="card-title">うそ！　うちの子の仕業！？</h4>
+                                <p class="card-text">
+                                    飼い主がいない間、犬たちがとっている行動とは！　彼らの生態を暴く。…
+                                </p>
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="card bg-primary text-white text-center">
-                        <img class="card-img-top" src="assets/img/image003.jpg" alt="#" />
-                        <div class="card-body">
-                            <h4 class="card-title">子供のIQは家族の仲の良さに比例する！？</h4>
-                            <p class="card-text">子供のIQは家族の仲の良さに比例するという研究結果が判明した。…</p>
+                <div class="col-sm-6 element">
+                    <!-- card.html002-->
+                    <a href="#">
+                        <div class="card bg-primary text-white text-center">
+                            <img class="card-img-top" src="assets/img/image003.jpg" alt="#" />
+                            <div class="card-body">
+                                <h4 class="card-title">子供のIQは家族の仲の良さに比例する！？</h4>
+                                <p class="card-text">子供のIQは家族の仲の良さに比例するという研究結果が判明した。…</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
                 </div>
 
 
@@ -84,63 +95,73 @@
 
 
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="card bg-primary text-white text-center">
-                        <img class="card-img-top" src="assets/img/image004.jpg" alt="#" />
-                        <div class="card-body">
-                            <h4 class="card-title">コスパ最強！　テント特集！</h4>
-                            <p class="card-text">今回はベルツリー、キャンプ部の井国がお送りする、テント特集！…</p>
+                <div class="col-sm-6 element">
+                    <!-- card.html003-->
+                    <a href="#">
+                        <div class="card bg-primary text-white text-center">
+                            <img class="card-img-top" src="assets/img/image004.jpg" alt="#" />
+                            <div class="card-body">
+                                <h4 class="card-title">コスパ最強！　テント特集！</h4>
+                                <p class="card-text">今回はベルツリー、キャンプ部の井国がお送りする、テント特集！…</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="card bg-primary text-white text-center">
-                        <img class="card-img-top" src="assets/img/image005.jpg" alt="#" />
-                        <div class="card-body">
-                            <h4 class="card-title">山にもキャンプにも！　UL装備！</h4>
-                            <p class="card-text">よく聞くUL装備とは何のか？　価格、デザイン、操作性などを徹底レビュー…</p>
+                <div class="col-sm-6 element">
+                    <!-- card.html004-->
+                    <a href="#">
+                        <div class="card bg-primary text-white text-center">
+                            <img class="card-img-top" src="assets/img/image005.jpg" alt="#" />
+                            <div class="card-body">
+                                <h4 class="card-title">山にもキャンプにも！　UL装備！</h4>
+                                <p class="card-text">よく聞くUL装備とは何のか？　価格、デザイン、操作性などを徹底レビュー…</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="card bg-primary text-white text-center">
-                        <img class="card-img-top" src="assets/img/image006.jpg" alt="#" />
-                        <div class="card-body">
-                            <h4 class="card-title">ビットコイン一時1万5000＄割れ　リスクヘッジをするには</h4>
-                            <p class="card-text">先週ビットコインが一時1万5000＄を割れた。今回の出来事にファンドマネージャーが警告を鳴らす</p>
+                <div class="col-sm-6 element">
+                    <!-- card.html005-->
+                    <a href="#">
+                        <div class="card bg-primary text-white text-center">
+                            <img class="card-img-top" src="assets/img/image006.jpg" alt="#" />
+                            <div class="card-body">
+                                <h4 class="card-title">ビットコイン一時1万5000＄割れ　リスクヘッジをするには</h4>
+                                <p class="card-text">先週ビットコインが一時1万5000＄を割れた。今回の出来事にファンドマネージャーが警告を鳴らす</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="col-sm-6">
-                    <div class="card bg-primary text-white text-center">
-                        <img class="card-img-top" src="assets/img/image007.png" alt="#" />
-                        <div class="card-body">
-                            <h4 class="card-title">僕たちはまだ知らなかった！　最高に整う５つの法則</h4>
-                            <p class="card-text">皆さんサウナ行ってますか！　今回は実はそれ整わないかも！？編集部おすすめ整いメソッド…</p>
+                <div class="col-sm-6 element">
+                    <!-- card.html006-->
+                    <a href="#">
+                        <div class="card bg-primary text-white text-center">
+                            <img class="card-img-top bg-light" src="assets/img/image007.png" alt="#" />
+                            <div class="card-body">
+                                <h4 class="card-title">僕たちはまだ知らなかった！　最高に整う５つの法則</h4>
+                                <p class="card-text">皆さんサウナ行ってますか！　今回は実はそれ整わないかも！？編集部おすすめ整いメソッド…</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
         <!-- Callout-->
         <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
+            <div class="container px-4 px-lg-5 text-center" id="Page-End">
                 <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
+                    Let's meet again
                 </h2>
                 <div class="row">
-                    <a class="btn btn-primary btn-xl" href="#">TOPへ</a>
+                    <a class="btn btn-primary btn-xl" href="#page-top" id="endButtton">TOPへ</a>
 
                 </div>
                 <div class="row">
-                    <a class="btn btn-danger btn-xl" href="#">ログアウト</a>
+                    <a class="btn btn-danger btn-xl" href="#" id="logOut-endButton">ログアウト</a>
                 </div>
             </div>
 
@@ -162,5 +183,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
     </body>
 </html>
