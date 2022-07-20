@@ -11557,10 +11557,20 @@ footer.footer .social-link:hover {
 .card{
     margin:50px auto;
 }
+
+/*最初は非表示*/
+.element {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s,visibility 1s,transform 1s;
+}
+
+
 /*fadein時に入るクラス*/
 .is-fadein {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
 }
-/*最初は非表示*/
+
