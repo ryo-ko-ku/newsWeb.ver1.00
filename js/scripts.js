@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', event => {
             _toggleMenuIcon();
         })
     });
-    //メニューアイコンのオンオフ時の変更
+    //メニューアイコンのオンオフ時の変更 function_toggleMenuIconの設定
     function _toggleMenuIcon() {
         const menuToggleBars = document.body.querySelector('.menu-toggle > .fa-bars');
         const menuToggleTimes = document.body.querySelector('.menu-toggle > .fa-xmark');
