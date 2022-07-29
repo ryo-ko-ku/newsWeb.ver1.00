@@ -40,22 +40,9 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     }
 
-    // Scroll to top button appear
-    //スクロール移動時の処理時間、
-    document.addEventListener('scroll', () => {
-        const scrollToTop = document.body.querySelector('.scroll-to-top');
-        if (document.documentElement.scrollTop > 100) {
-            if (!scrollToTopVisible) {
-                fadeIn(scrollToTop);
-                scrollToTopVisible = true;
-            }
-        } else {
-            if (scrollToTopVisible) {
-                fadeOut(scrollToTop);
-                scrollToTopVisible = false;
-            }
-        }
-    })
+  
+
+   
 
     //以下FADEINとFADEOUTの設定
     function fadeOut(el) {
@@ -90,7 +77,7 @@ $(function () {
 
     
 
-$(window).scroll(function () {
+    $(window).scroll(function () {
         const windowHeight = $(window).height();
         const scroll = $(window).scrollTop();
 
@@ -101,4 +88,16 @@ $(window).scroll(function () {
             }
         });
     });
+
+
+    //下へスクロールすると表示され、上へスクロールすると非表示に。
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+
+
 });
