@@ -101,3 +101,20 @@ $(function () {
 
 
 });
+
+//スライドショー
+$(function () {
+    $(document).ready(function () {
+        $('.slide-items').bxSlider({
+            auto: true, //　スライド自動再生
+            mode: 'horizontal', // 縦方向にスライド
+            speed: 1000, // スライド時間
+            touchEnabled: false,
+        });
+    });
+});
+
+//background movie
+$(function () {
+    $(".bg-movie").YTPlayer();
+});
