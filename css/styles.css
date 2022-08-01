@@ -11654,22 +11654,20 @@ footer.footer .social-link:hover {
 }
 .container1{
     padding:50px;
-    margin-top:200px;
+    margin-top:50px;
 }
 .slide-items img{
     margin:0 auto;
 }
 
 
-#youtube-area {
-    width:100%;
-    height:800px;
-    position:relative;
-    text-align:center;
+#bg-movie {
+    margin-top: 100px;
 }
 .bg-movie {
     width: 100%;
     height: 100vh;
     position:center;
     z-index:1;
+   
 }
